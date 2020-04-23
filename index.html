@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="" placeholder="style.css">
+	<style type="text/css">
+		.menu {
+			background-image: url(2.jpg);
+			background-size: 100%;
+			height: 960px;
+			position: absolute;
+			background-position: 25%;
+			display: block;
+		}
+
+		.btn1 {
+			left: 870px;
+			position: absolute;
+			margin-top: 200px;
+		}
+
+		.btn2 {
+			left: 275px;
+			position: absolute;
+			margin-top: 150px;
+		}
+
+		.btn3 {
+			left: 770px;
+			position: absolute;
+			margin-top: 150px;
+		}
+
+		.bedroom {
+			background-image: url(1.jpg);
+			background-size: 100%;
+			height: 960px;
+			position: absolute;
+			display: none;
+		}
+
+		.livingRoom {
+			background-image: url(4.jpg);
+			background-size: 100%;
+			height: 960px;
+			position: absolute;
+			display: none;
+		}
+
+		.kitchen {
+			background-image: url(3.jpg);
+			background-size: 100%;
+			height: 960px;
+			position: absolute;
+			display: none;
+			background-position: 10%
+		}
+
+		.mansion {
+			background-image: url(mansion.png);
+			background-size: 100%;
+			height: 960px;
+			position: absolute;
+			display: none;
+		}
+
+		.font {
+			font-family: Gabriola;
+			color: white;
+			font-weight: bold
+		}
+
+		.crowbar {
+			position: absolute;
+			left: 630px;
+			top: 740px;
+			width: 125px;
+			transform: rotate(-15deg);
+			filter: blur(0.5px);
+			transition: 0.5s;
+		}
+
+		.key {
+			position: absolute;
+			width: 75px;
+			left: 1400px;
+			top: 750px;
+			transform: rotate(-15deg);
+			filter: blur(0.5px);
+			transition: 0.5s;
+		}
+
+		.mask {
+			position: absolute;
+			width: 50px;
+			left: 750px;
+			top: 650px;
+			transform: rotate(-90deg);
+			filter: blur(1px);
+			transition: 0.5s;
+		}
+
+		.axe {
+			position: absolute;
+			width: 150px;
+			top: 600px;
+			left: 50px;
+			transform: rotate(-60deg);
+			filter: blur(1px);
+			transition: 0.5s;
+		}
+
+		.rope {
+			position: absolute;
+			width: 100px;
+			top: 750px;
+			left: 250px;
+			filter: blur(0.75px);
+			transition: 0.5s;
+		}
+
+		.kol {
+			position: absolute;
+			width: 65px;
+			top: 750px;
+			left: 900px;
+			transform: rotate(-45deg);
+			filter: blur(1px);
+			transition: 0.5s;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="menu col-12 pl-0 pr-0">
+		<div class="col-6 bg-dark mx-auto py-3 rounded" style="margin-top: 150px">
+			<h1 class="font text-center">Приветствую! Дорогой игрок! Ты попал в старый заброшенный особняк, полный разных токсичных и вредных веществ. Тебе надо как можно быстро находить вещи, спрятанные в каждой локации, чтобы передвигаться дальше, иначе ты задохнешься и умрешь! Тебе дается на каждую локацию по 1 минуте</h1>
+
+		</div>
+		<button class="bg-danger border-0 rounded btn btn1"><h1 class="font mx-3 my-3">Играть</h1></button>
+
+	</div>
+	<div class="col-12 bedroom pl-0 pr-0">
+		<div class="col-2 bg-danger py-3 ml-3 mt-3 rounded" style="position: absolute;">
+			<h1 class="font">Тебе нужно найти:</h1>
+			<h1 class="font object">1. Лом</h1>
+			<h1 class="font object">2. Ключ</h1>
+		</div>
+		<img src="crowbar.png" class="crowbar">
+		<img src="key.png" class="key">
+		<div class="col-4 bg-white mx-auto py-3 letter" style="height: 700px; margin-top: 100px">
+			<h1 class="font text-center" style="color: black">Привет! Наконец-то ты очнулся, даже хорошо, что ты проснулся... Если ты читаешь это письмо, то я очень рад, что ты остался жив. Ты должен забрать с собой эти вещи *они находятся в левом верхнем углу экрана*, которые могут помочь тебе выбраться. Когда ты выберешься, беги со все...*запись резко обрывается*</h1>
+			<button class="btn2 rounded border-0 bg-danger"><h1 class="font mx-3 my-3">Skip</h1></button>
+		</div>
+	</div>
+	<div class="livingRoom col-12 pl-0 pr-0">
+		<div class="col-2 bg-danger py-3 ml-3 mt-3 rounded">
+			<h1 class="font">Тебе нужно найти:</h1>
+			<h1 class="font object">1. Противогаз</h1>
+			<h1 class="font object">2. Топор</h1>
+		</div>
+		<img src="mask2.png" class="mask">
+		<img src="axe.png" class="axe">
+	</div>
+	<div class="kitchen col-12 pl-0 pr-0">
+		<div class="col-2 bg-danger py-3 ml-3 mt-3 rounded">
+			<h1 class="font">Тебе нужно найти:</h1>
+			<h1 class="font object">1. Веревку</h1>
+			<h1 class="font object">2. Кол</h1>
+		</div>
+		<img src="rope.png" class="rope">
+		<img src="kol.png" class="kol">
+	</div>
+	<div class="mansion col-12 pl-0 pr-0">
+		<div class="col-6 bg-dark mx-auto py-3 rounded notif" style="margin-top: 150px">
+			<h1 class="font text-center">На двери выхода была прикреплена некая бумага, она выглядела совсем белой, но немного помятой. Герою стало интересно, и он взглянул на эту бумагу.</h1>
+		</div>
+		<button class="bg-danger border-0 rounded btn btn3"><h1 class="font mx-3 my-3">Посмотреть бумагу</h1></button>
+		<div class="col-4 bg-white mx-auto py-3 letter" style="height: 700px; margin-top: 100px; display: none;">
+			<p class="font" style="color: black; font-size: 27px">Здравствуй, дорогой друг! Мне сейчас плохо, поэтому я пишу это тебе. Во время нашего обыска ты отключился, и я подумал, что мне стоит идти дальше, искать выход или что-то еще. Я положил тебя в спальне, так как по моему датчику, там было меньше всего токсинов, а я пошел дальше. Уже не помню точно, куда и как я шел и что я вообще делал. Я понял, что эти токсины неким образом разрушают память человека, поэтому некоторые данные из этого письма могут быть лживыми. Кстати, я не докончил то самое письмо, которое написал, потому что мое время было на исходе. Бесполезно было бы оставаться с тобой в той комнате, так как токсины были там все равно, а искать выход после того, как ты только проснешься, было бы поздно. Я немного прочистил для тебя путь, отодвинул некоторые вещи, которые могли помешать твеому передвижению. Это только то, что я смог вспомнить. Прости меня, пожалуйста, что подверг тебя такой опасности. Думаю, я заслуживаю твоей злости к моему предательству.<span style="margin-left: 200px">-Твой друг, Денис</span></p>
+		</div>
+		<h1 class="font text-center congr" style="display: none">Поздравляю тебя, дорогой игрок! Ты успешно прошел игру! Перезагрузи сайт, чтобы начать заново</h1>
+	</div>
+	<div class="loss col-12 bg-danger" style="height: 960px; padding-top: 250px; display: none; position: absolute;">
+		<h1 class="font text-center" style="font-size: 100px">Ты проиграл! Ты пробыл в одном помещении слишком долго</h1>
+		<h1 class="font text-center">Перезагрузи страницу, чтобы начать заново</h1>
+	</div>
+	<script type="text/javascript">
+		//кнопка в меню
+		let btn = document.querySelector('.btn');
+		//для кнопки под письмом
+		let btn2 = document.querySelector('.btn2');
+		//для кнопки под 2 письмом
+		let btn3 = document.querySelector('.btn3');
+
+		let notif = document.querySelector('.notif');
+		let congr = document.querySelector('.congr');
+		let menu = document.querySelector('.menu');
+		let loss = document.querySelector('.loss');
+		let letter = document.querySelectorAll('.letter');
+		let object = document.querySelectorAll('.object');
+		//комнаты(локации)
+		let bedroom = document.querySelector('.bedroom');
+		let livingRoom = document.querySelector('.livingRoom');
+		let kitchen = document.querySelector('.kitchen');
+		let mansion = document.querySelector('.mansion');
+		//вещи
+		let crowbar = document.querySelector('.crowbar');
+		let key = document.querySelector('.key');
+		let mask = document.querySelector('.mask');
+		let axe = document.querySelector('.axe');
+		let rope = document.querySelector('.rope');
+		let kol = document.querySelector('.kol');
+		//отсчет времени
+		let timeout = function() {
+			if (score<2){
+				loss.style.display = 'block';
+			}
+		}
+		let timeout2 = function() {
+			if (score2<2){
+				loss.style.display = 'block';
+			}
+		}
+		let timeout3 = function() {
+			if (score3<2){
+				loss.style.display = 'block';
+			}
+		}
+		let score = 0;
+		let score2 = 0;
+		let score3 = 0;
+		btn.onclick = function() {
+			menu.style.display = 'none';
+			bedroom.style.display = 'block';
+		}
+		btn2.onclick = function() {
+			letter[0].style.display = 'none';
+			setTimeout(timeout, 30000);
+		}
+		crowbar.onclick = function() {
+			object[0].style.textDecoration = 'line-through';
+			crowbar.style.opacity = 0;
+			score = score + 1;
+			if (score>=2){
+				bedroom.style.display = 'none';
+				livingRoom.style.display = 'block';
+				setTimeout(timeout2, 30000);
+				
+			}
+		}
+		key.onclick = function() {
+			object[1].style.textDecoration = 'line-through';
+			key.style.opacity = 0;
+			score = score + 1;
+			if (score>=2){
+				bedroom.style.display = 'none';
+				livingRoom.style.display = 'block';
+				setTimeout(timeout2, 30000);
+				
+			}
+		}
+		axe.onclick = function() {
+			object[3].style.textDecoration = 'line-through';
+			axe.style.opacity = 0;
+			score2 = score2 + 1;
+			if (score2>=2){
+				bedroom.style.display = 'none';
+				kitchen.style.display = 'block';
+				setTimeout(timeout3, 30000);
+				
+			}
+		}
+		mask.onclick = function() {
+			object[2].style.textDecoration = 'line-through';
+			mask.style.opacity = 0;
+			score2 = score2 + 1;
+			if (score2>=2){
+				bedroom.style.display = 'none';
+				kitchen.style.display = 'block';
+				setTimeout(timeout3, 30000);
+				
+			}
+		}
+		rope.onclick = function() {
+			object[4].style.textDecoration = 'line-through';
+			rope.style.opacity = 0;
+			score3 = score3 + 1;
+			if (score3>=2){
+				kitchen.style.display = 'none';
+				mansion.style.display = 'block';
+				set
+			}
+		}
+		kol.onclick = function() {
+			object[5].style.textDecoration = 'line-through';
+			kol.style.opacity = 0;
+			score3 = score3 + 1;
+			if (score3>=2){
+				kitchen.style.display = 'none';
+				mansion.style.display = 'block';
+			}
+		}
+
+		btn3.onclick = function() {
+			btn3.style.display = 'none';
+			notif.style.display = 'none';
+			congr.style.display = 'block';
+			letter[1].style.display = 'block';
+		}
+	</script>
+</body>
+</html>
